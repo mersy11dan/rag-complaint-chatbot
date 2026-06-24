@@ -1,0 +1,11 @@
+﻿# Large data files - exclude from Cursor indexing & chat context.
+# The raw CFPB complaints.csv is multi-GB and overflows the IDE's
+# request serialization (uint32 size field), causing transport errors.
+data/raw/
+data/processed/
+vector_store/
+*.csv
+*.faiss
+*.index
+*.bin
+*.pkl

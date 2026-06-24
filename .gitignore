@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Raw & processed data (large / sensitive)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Vector stores / embeddings
+vector_store/*
+!vector_store/.gitkeep
+*.faiss
+*.index
+chroma/
+.chroma/
+
+# Local outputs & artifacts
+outputs/
+logs/
+*.log
+*.pkl
+*.bin
+
+# Environment & secrets
+.env
+.env.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
